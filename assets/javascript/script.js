@@ -4,7 +4,9 @@ var generateBtn = document.querySelector("#generate");
 var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'J', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'j', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-var symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+', '/', '~', '<', '>'];
+var symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+', '/', '~', '<', '{', '}', '|', '>'];
+
+//The finction responsible to begin the sequence of question.
 
 function generatePassword() {
 
@@ -22,23 +24,22 @@ while (!lengthChoice) {
 var chosenCharactersArr = []
 var passwordstring = ''
 
-
 var select = false
 while (!select) {
 
-if (confirm('would you like Capital letters?')) {
+if (confirm('Would you like to include Capital letters?')) {
   chosenCharactersArr.push(upperCase)
 }
 
-if (confirm('would you like to include lowercase letters?')) {
+if (confirm('Would you like to include lowercase letters?')) {
   chosenCharactersArr.push(lowerCase)
 }
 
-if (confirm('would you like to include numbers?')) {
+if (confirm('Would you like to include numbers?')) {
   chosenCharactersArr.push(numbers)
 }
 
-if (confirm('would you like to include symbols?')) {
+if (confirm('Would you like to include symbols?')) {
   chosenCharactersArr.push(symbols)
 }
 
@@ -46,7 +47,7 @@ if (chosenCharactersArr.length === 1 || chosenCharactersArr.length === 2 ||
   chosenCharactersArr.length === 3 || chosenCharactersArr.length === 4) {
   select = true;
 } else {
-  alert("OOPS! Password MUST contain at least ONE type of character!");
+  alert("OOPS! Password MUST contain at least ONE character type!");
 }
 }
 
@@ -64,7 +65,7 @@ for (var i = 0; i < passLength; i++) {
 
 //Final password on an alert and then in the text box
 
-alert('Awesome! Collect your secure password: ' + passwordstring + ' From the box bellow!')
+alert('Awesome! Collect your secure password from the box bellow!')
 
 return passwordstring
 }
