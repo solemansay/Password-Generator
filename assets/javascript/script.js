@@ -8,12 +8,12 @@ var symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', 
 
 function generatePassword() {
 
-var proper = false;
-while (!proper) {
+var lengthChoice = false;
+while (!lengthChoice) {
   passLength = parseInt(prompt('How many charcters would you like? (8-128)'));
   if (passLength <= 128 && passLength >= 8) {
-    alert(passLength + "! great choice! Time to select some character types.");
-    proper = true;
+    alert(passLength + "! Great choice! Time to select some character types.");
+    lengthChoice = true;
   } else {
     alert("Password length must be 8 to 128 characters long!");
   }
@@ -46,7 +46,7 @@ if (chosenCharactersArr.length === 1 || chosenCharactersArr.length === 2 ||
   chosenCharactersArr.length === 3 || chosenCharactersArr.length === 4) {
   select = true;
 } else {
-  alert("Password Must contain at least one type of character!");
+  alert("OOPS! Password MUST contain at least ONE type of character!");
 }
 }
 
@@ -62,9 +62,9 @@ for (var i = 0; i < passLength; i++) {
   //console.log(randomCharacterType, randomCharacter, password, passwordstring)
 }
 
-//Final password on an alert
+//Final password on an alert and then in the text box
 
-alert('Here is your secure password: ' + passwordstring)
+alert('Awesome! Collect your secure password: ' + passwordstring + ' From the box bellow!')
 
 return passwordstring
 }
