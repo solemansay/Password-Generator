@@ -6,12 +6,13 @@ var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'j', 'h', 'i', 'j', 'k', 'l', 'm'
 var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 var symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+', '/', '~', '<', '>'];
 
+function generatePassword() {
 
 var proper = false;
 while (!proper) {
   passLength = parseInt(prompt('How many charcters would you like? (8-128)'));
   if (passLength <= 128 && passLength >= 8) {
-    alert(passLength + "! great choice! Time to select caracter types.");
+    alert(passLength + "! great choice! Time to select some character types.");
     proper = true;
   } else {
     alert("Password length must be 8 to 128 characters long!");
@@ -65,6 +66,8 @@ for (var i = 0; i < passLength; i++) {
 
 alert('Here is your secure password: ' + passwordstring)
 
+return passwordstring
+}
 
 // Function's to display final password in the text box
 
@@ -76,9 +79,6 @@ function writePassword() {
 }
 
 
-function generatePassword() {
-  return passwordstring
-}
 
 // My event listener to generate button
 
