@@ -12,12 +12,12 @@ function generatePassword() {
 
 var lengthChoice = false;
 while (!lengthChoice) {
-  passLength = parseInt(prompt('How many charcters would you like? (8-128)'));
+  passLength = parseInt(prompt('How long would you like your password to be? (must be 8-128 characters long)'));
   if (passLength <= 128 && passLength >= 8) {
     alert(passLength + "! Great choice! Time to select some character types.");
     lengthChoice = true;
   } else {
-    alert("Password length must be 8 to 128 characters long!");
+    alert("OOPS! Password length MUST be 8 to 128 characters long!");
   }
 }
 
