@@ -3,18 +3,19 @@ The purpose of this website is to randomly generate a password of 8 to 128 chara
 
 # how it works:
 This website came with a framework, including the complete HTML and CSS files, all I had to do was add to the javascript file to create the password generator engine. 
+
 The first thing that I created was a couple of arrays holding the possible character selections:
 
-- var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'J', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+    - var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'J', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
-- var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'j', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    - var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'j', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-- var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    - var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-- var symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+', '/', '~', '<', '{', '}', '|', '>'];
+    - var symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+', '/', '~', '<', '{', '}', '|', '>'];
 
 
- After this, I began writing the password generation function (generatePassword), inside of the curly brackets of the function "{",  I began with a prompt asking the user to input the desired password length within 8-128 characters long. 
+ After this, I began writing the password generation function (generatePassword), inside of the curly brackets of this function I began with a prompt asking the user to input the desired password length within 8-128 characters long. 
 
 If the input was 0-7 or 129 and above, an alert would show stating that the user must choose a number between 8 and 128 and then returning them to the previous prompt. 
 
@@ -31,12 +32,12 @@ After this is all said and done, the for loop commences first taking into accoun
 
 After this, I named a variable "Password" and made it equal to chosenCharactersArr[randomCharacterType][randomCharacter] and finally I made the variable passwordString='' equal to passwordstring += password which essentially pushes all the values of the for loop into one continuous string, ergo your new password with your selected characters and length! 
 
-The final piece to the puzzle was to return the variable passwordString completing the "generatePassword" function with a closed curly bracket "}".
+The final piece to the puzzle was to return the variable passwordString completing the "generatePassword" function with a closed curly bracket.
 
 Once the passwordString is achieved the function to display the final password in the text box runs and the generator has done its job!
 
     thank you for reading.
 
-    I hope you enjoyed my solution to creating a randomly generated password. 
+    I hope you enjoyed my solution to creating a random password generator. 
 
     -Soleman Sayeed.
