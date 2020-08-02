@@ -34,7 +34,7 @@ After this, I named a variable "Password" and made it equal to chosenCharactersA
 
 The final piece to the puzzle was to return the variable passwordString completing the "generatePassword" function with a closed curly bracket.
 
-Once the passwordString is achieved the function to display the final password in the text box runs and the generator has done its job!
+Once the passwordString is achieved, the function to display the final password in the text box runs and the generator has done its job!
 
     thank you for reading.
 
