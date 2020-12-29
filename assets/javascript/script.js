@@ -6,7 +6,7 @@ var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'j', 'h', 'i', 'j', 'k', 'l', 'm'
 var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 var symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+', '/', '~', '<', '{', '}', '|', '>'];
 
-//The finction responsible to begin the sequence of question.
+//The function responsible to begin the sequence of question.
 
 function generatePassword() {
 
