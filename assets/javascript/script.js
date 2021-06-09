@@ -1,86 +1,10 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-var upperCase = [
-  "A",
-  "B",
-  "C",
-  "D",
-  "E",
-  "F",
-  "J",
-  "H",
-  "I",
-  "J",
-  "K",
-  "L",
-  "M",
-  "N",
-  "O",
-  "P",
-  "Q",
-  "R",
-  "S",
-  "T",
-  "U",
-  "V",
-  "W",
-  "X",
-  "Y",
-  "Z",
-];
-var lowerCase = [
-  "a",
-  "b",
-  "c",
-  "d",
-  "e",
-  "f",
-  "j",
-  "h",
-  "i",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
-];
+var upperCase = ["A","B","C","D","E","F","J","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",];
+var lowerCase = ["a","b","c","d","e","f","j","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",];
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-var symbols = [
-  "!",
-  "@",
-  "#",
-  "$",
-  "%",
-  "^",
-  "&",
-  "*",
-  "(",
-  ")",
-  "-",
-  "_",
-  "=",
-  "+",
-  "/",
-  "~",
-  "<",
-  "{",
-  "}",
-  "|",
-  ">",
-];
+var symbols = ["!","@","#","$","%","^","&","*","(",")","-","_","=","+","/","~","<","{","}","|",">"];
 
 //The function responsible to begin the sequence of question.
 
@@ -99,7 +23,7 @@ function generatePassword() {
         passLength + "! Great choice! Time to select some character types."
       );
       lengthChoice = true;
-    }  else if (passLength >= 128 || passLength <= 8) {
+    } else if (passLength >= 128 || passLength <= 8) {
       alert("OOPS! Password length MUST be 8 to 128 characters long!");
     } else if (input === null) {
       return;
